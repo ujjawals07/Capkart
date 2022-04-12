@@ -17,7 +17,10 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 10vh min-content repeat(4, min-content);
+  grid-template-rows: 10vh min-content repeat(
+      4,
+      min-content
+    );
   grid-template-columns: repeat(6, minmax(min-content, 25rem));
 }
 .headers {
@@ -41,7 +44,7 @@ body {
     align-content: center;
   }
   &-items {
-    padding: 0 2.5rem;
+    margin: 0 2.5rem;
     list-style: none;
     font-size: 1.2rem;
     font-family: sans-serif;
@@ -60,7 +63,7 @@ body {
   padding: 0 3rem;
 }
 .i {
-  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
   list-style: none;
   font-size: 1.6rem;
   color: rgb(0, 0, 0);
@@ -85,7 +88,7 @@ body {
 }
 @media (max-width: 800px) {
   html {
-    font-size: 60%;
+    font-size: 65%;
   }
   #menu {
     display: block;
@@ -125,6 +128,46 @@ body {
 
 @media (max-width: 600px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
+}
+.section_one{
+  grid-column: 1/-1;
+background-image: url(../img/wall.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+}
+.cap{
+grid-column: 2/3;
+align-self: center;
+justify-self: center;
+color: aliceblue;
+&_img{
+  width: 30vw;
+  grid-column: 4/6;
+  justify-self: center;
+}
+&_button{
+align-self: flex-end;
+    color: azure;
+    background-color: goldenrod;
+    padding: 0.4rem 2rem;
+    font-size: 1rem;
+    font-family: cursive;
+    font-weight: 400;
+    &:hover{
+      background-color: rgb(243, 177, 11);
+      cursor: pointer;
+      transition: .2s;
+    }
+}
+&-p{
+  width: 30vw;
+
+}
+}
+.btn{
+margin-top: 3rem;
 }

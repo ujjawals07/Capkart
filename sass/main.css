@@ -61,7 +61,7 @@ body {
 }
 
 .nav-items {
-  padding: 0 2.5rem;
+  margin: 0 2.5rem;
   list-style: none;
   font-size: 1.2rem;
   font-family: sans-serif;
@@ -83,7 +83,7 @@ body {
 }
 
 .i {
-  padding: 0.5rem 1rem;
+  margin: 0.5rem 1rem;
   list-style: none;
   font-size: 1.6rem;
   color: black;
@@ -110,7 +110,7 @@ body {
 
 @media (max-width: 800px) {
   html {
-    font-size: 60%;
+    font-size: 65%;
   }
   #menu {
     display: block;
@@ -150,7 +150,65 @@ body {
 
 @media (max-width: 600px) {
   html {
-    font-size: 50%;
+    font-size: 55%;
   }
+}
+
+.section_one {
+  grid-column: 1/-1;
+  background-image: url(../img/wall.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+}
+
+.cap {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: aliceblue;
+}
+
+.cap_img {
+  width: 30vw;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
+  grid-column: 4/6;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.cap_button {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: azure;
+  background-color: goldenrod;
+  padding: 0.4rem 2rem;
+  font-size: 1rem;
+  font-family: cursive;
+  font-weight: 400;
+}
+
+.cap_button:hover {
+  background-color: #f3b10b;
+  cursor: pointer;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.cap-p {
+  width: 30vw;
+}
+
+.btn {
+  margin-top: 3rem;
 }
 /*# sourceMappingURL=main.css.map */
