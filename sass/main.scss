@@ -17,8 +17,8 @@ body {
 
 .container {
   display: grid;
- grid-template-rows: 10vh 60vh  repeat(4, min-content);
- grid-template-columns: repeat(6, minmax(min-content, 25rem));
+  grid-template-rows: 10vh 80vh repeat(4, min-content);
+  grid-template-columns: repeat(6, minmax(min-content, 25rem));
 }
 .headers {
   display: flex;
@@ -99,7 +99,7 @@ body {
     border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-z-index: 6000;
+    z-index: 6000;
     //display: none;
   }
   header .nav_list.active {
@@ -116,7 +116,7 @@ z-index: 6000;
     text-decoration: none;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgba(0, 0, 0, 0.269);
-z-index: 6000;
+    z-index: 6000;
     &:hover {
       color: goldenrod;
     }
@@ -140,7 +140,7 @@ z-index: 6000;
 }
 
 .slide {
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   // margin: 0 20vw;
   justify-content: space-around;
@@ -152,7 +152,7 @@ z-index: 6000;
   justify-self: center;
   color: aliceblue;
   animation: slidecontent 0.3s linear 0.6s backwards;
-  padding-bottom: 20rem;
+  padding-bottom: 6rem;
   font-family: sans-serif;
   font-weight: 500;
   font-size: 1rem;
@@ -160,7 +160,6 @@ z-index: 6000;
     width: 48.7vh;
 
     justify-self: center;
-
   }
 
   .offers {
@@ -199,11 +198,11 @@ z-index: 6000;
 .image {
   // position: relative;
   transform: rotate(-360deg);
-  padding-bottom: 30rem;
+  padding-bottom: 6rem;
   position: relative;
   animation: capcontent 0.3s linear;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
 
 @keyframes capcontent {
@@ -222,8 +221,8 @@ z-index: 6000;
   width: 4rem;
   line-height: 4.5rem;
   font-size: 2rem;
- color: black;
- background-color: goldenrod;
+  color: black;
+  background-color: goldenrod;
   cursor: pointer;
   text-align: center;
 }
@@ -231,8 +230,6 @@ z-index: 6000;
 #prev:hover,
 #next:hover {
   color: #fff;
-  
-
 }
 
 #prev {
@@ -261,18 +258,17 @@ z-index: 6000;
     position: absolute;
     top: 27%;
     animation: capcontent 0.3s linear;
-    
   }
   .cap {
     align-self: flex-start;
     justify-self: flex-start;
     padding-top: 2rem;
   }
-  .cap-p{
+  .cap-p {
     width: 50vw;
     font-size: 1rem;
   }
-  .offers{
+  .offers {
     font-size: 1.6rem;
   }
   .btn {
@@ -284,79 +280,191 @@ z-index: 6000;
   #prev {
     left: 1rem;
   }
-  
-  #next {
 
+  #next {
     right: 1rem;
   }
   #prev,
-#next {
-  position: absolute;
-  top: 60%;}
-
+  #next {
+    position: absolute;
+    top: 60%;
+  }
 }
 @media (max-width: 600px) {
-  .cap_img{
-width: 30vh;
+  .cap_img {
+    width: 30vh;
   }
   .image {
     // position: relative;
-  
-    top: 35%;}
-    .cap-p{
-      width: 60vw;
-      font-size: 1rem;
-    }
+
+    top: 35%;
+  }
+  .cap-p {
+    width: 60vw;
+    font-size: 1rem;
+  }
 }
 @media (max-width: 970px) {
   #prev {
-    left: .5rem;
+    left: 0.5rem;
   }
-  
+
   #next {
+    right: 0.5rem;
+  }
+}
 
-    right: .5rem;
-  }
-  }
-
-  .section-2{
-    grid-column: 1/-1;
-    padding: 8rem;
-    background-color: aliceblue;
-  }
-.box{
+.section-2 {
+  grid-column: 1/-1;
+  padding: 8rem;
+  background-color: aliceblue;
+}
+.box {
   display: flex;
   flex-wrap: wrap;
-gap: 2.5rem;
+  gap: 2.5rem;
   padding: 2rem 2rem;
   border: 2px solid rgb(196, 178, 39);
- width: 100%;
- background-color: rgba(232, 232, 232, 0.532);
-
+  width: 100%;
+  background-color: rgba(232, 232, 232, 0.532);
 }
-.details{
+.details {
   padding: 1.5rem;
   font-family: sans-serif;
 
-  flex:  1 1 27rem;
+  flex: 1 1 27rem;
   color: black;
   align-items: center;
-  &-p{
+  &-p {
     font-size: 1.2rem;
     width: fit-content;
     color: rgb(42, 36, 36);
   }
-  &-heading{
+  &-heading {
     color: rgb(61, 61, 185);
     font-size: 1.8rem;
-    padding-bottom: .6rem;
+    padding-bottom: 0.6rem;
   }
 }
-.i2{
-  color:rgb(255, 183, 0);
+.i2 {
+  color: rgb(255, 183, 0);
   font-size: 3.4rem;
   padding-bottom: 1rem;
 }
+.products {
+  grid-column: 1/-1;
+  background-color: aliceblue;
+  padding-top: 3rem;
+  &-heading{
+    font-size: 4rem;
+    text-align: center;
+    padding-bottom: 3rem;
+    text-transform: capitalize;
+    color: rgb(229, 199, 67);
+font-family: cursive;
+  }
+}
+.cap-img {
+  //width: 100%;
+  height: 20rem;
+  width: 15rem;
+  padding-top: 2rem;
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.1));
+  // margin:8rem 2rem;
+  &:hover {
+    transform: scale(1.48);
+    transition: 0.2s;
+  }
+}
+.cap-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.cap-box {
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: #f9f9f9;
+  flex: 1 1 30rem;
+}
+
+.content {
+  padding: 1.2rem;
+}
+
+.icon {
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  top: 0.5rem;
+  left: 1rem;
+  font-size: 1.7rem;
+  line-height: 4.5rem;
+  text-decoration: none;
+  border-bottom: none;
+ 
+}
+.ic{
+  margin: 1rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  &:hover{
+    color: goldenrod;
+  }
+}
+
+
+.i3 {
+  height: 4.5rem;
+  width: 5rem;
+  line-height: 3.5rem;
+  font-size: 2rem;
+  border: 0.1rem solid var(--black);
+  border-radius: 0.5rem;
+  background: #fff;
+  margin-top: 0.5rem;
+  color: rgb(225, 241, 6);
+}
+
+
+
+.content {
+
+  font-size: 1.5rem;
+}
+
+.price {
+
+  font-size: 2.5rem;
+  font-weight: bolder;
+  padding: 1rem 0;
+}
+
+.price span {
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+.stars {
+  padding-bottom: 1rem;
+}
+.btn-cart{
+  text-transform: capitalize;
+  text-decoration: none;
+  border: 2px solid goldenrod;
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  color: black;
+  &:hover{
+    background-color: goldenrod;
+    color: #f9f9f9;
+  }
+}
+
+
 /*.slide{
   min-height: 100vh;
   display: flex;
