@@ -471,6 +471,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 1.5rem;
+  padding: 0 5rem;
 }
 
 .cap-box {
@@ -586,6 +587,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 2.5rem;
+  padding: 0 5rem;
 }
 
 .review-box {
@@ -594,7 +596,7 @@ body {
           flex: 1 1 30rem;
   text-align: center;
   border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background: #f9f9f9;
   padding: 2rem;
 }
@@ -618,6 +620,217 @@ body {
   font-family: sans-serif;
   font-weight: 500;
   text-transform: capitalize;
+}
+
+.footers {
+  grid-column: 1/-1;
+  padding-top: 10rem;
+}
+
+.box-container {
+  border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+  background: #f9f9f9;
+  padding: 2rem 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.box-f {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
+.h-f {
+  font-size: 2rem;
+  padding-top: 2rem;
+  font-family: sans-serif;
+  color: #1b0e4a;
+  text-transform: capitalize;
+  display: block;
+}
+
+.item-f {
+  color: #666;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+  display: block;
+  padding-top: 1rem;
+  border-bottom: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.item-f:hover {
+  color: goldenrod;
+}
+
+.credit {
+  text-align: center;
+  width: 100%;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  padding: 1rem;
+  padding-top: 2rem;
+  color: #999;
+}
+
+.cart-body {
+  background-image: url(../img/pexels-karolina-grabowska-5632398.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.cart_container {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2/4;
+  background-color: white;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 10rem auto;
+  padding: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cart-details {
+  padding-left: 3rem;
+}
+
+.cart-title {
+  color: #000;
+  font-size: 2rem;
+  font-family: cursive;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.cart-pic {
+  height: 5rem;
+  width: 5rem;
+}
+
+.cart-container {
+  padding: 4rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cart-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  background-color: azure;
+}
+
+.cart-item {
+  font-size: 1.5rem;
+  color: goldenrod;
+  font-family: sans-serif;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.cart-price {
+  font-size: 1rem;
+  padding-bottom: .4rem;
+}
+
+.cart-quantity {
+  width: 20%;
+  padding: .2rem .2rem;
+}
+
+.total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid goldenrod;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-family: sans-serif;
+}
+
+.delet {
+  background-color: red;
+  font-family: sans-serif;
+  padding: .3rem .7rem;
+  color: #f9f9f9;
+  text-transform: capitalize;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.delet:hover {
+  background-color: #c70707;
+}
+
+.btn-home {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  padding-left: 3rem;
+  color: whitesmoke;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.btn-home:hover {
+  color: goldenrod;
+}
+
+.undo {
+  font-size: 2rem;
+  color: #f9f9f9;
+}
+
+.btn-buy {
+  text-decoration: none;
+  border: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: azure;
+  background-color: goldenrod;
+  padding: 0.4rem 2rem;
+  font-size: 1rem;
+  font-family: cursive;
+  font-weight: 400;
+}
+
+.btn-buy:hover {
+  background-color: #f3b10b;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 /*.slide{

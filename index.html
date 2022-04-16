@@ -14,16 +14,18 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body class="container">
+  <body class="container"> 
+
+
     <header class="headers">
       <a href="#" class="fas fa-bars menubar" id="menu"></a>
       <h class="title">CapCart</h>
 
       <nav class="nav_list" id="navlistactive">
-        <li class="nav-items">Home</li>
-        <li class="nav-items">Products</li>
-        <li class="nav-items">Featured</li>
-        <li class="nav-items">Review</li>
+        <li class="nav-items" >Home</li>
+        <li class="nav-items" id="products">Products</li>
+        <li class="nav-items" id="upcoming">Upcoming</li>
+        <li class="nav-items" id="review">Review</li>
       </nav>
 
       <div class="icons">
@@ -32,8 +34,9 @@
         <a href="#" class="fas fa-user i"></a>
       </div>
     </header>
+   
 
-    <section class="section_one">
+    <section class="section_one" id="home-section">
       <div class="slide-container active">
         <div class="slide">
           <div class="cap">
@@ -93,6 +96,10 @@
     <div class="fas fa-chevron-left"  id="prev" onclick="prev()"></div>
     <div class="fas fa-chevron-right"  id="next" onclick="next()"></div>
     </section>
+
+
+
+
     <section class="section-2">
       <div class="box">
  
@@ -117,7 +124,7 @@
       </div>
     </section>
 
-    <section class="products" id="products">
+    <section class="products" id="products1">
 
       <h4 class="products-heading"> latest <span>cap</span> </h1>
   
@@ -248,7 +255,7 @@
         </section>
         <section class="products2" id="products2">
 
-          <h4 class="products-heading"> Most <span>selled</span> </h1>
+          <h4 class="products-heading"> Upcoming <span>Caps</span> </h1>
       
           <div class="cap-box-container">
       
@@ -375,7 +382,7 @@
       </div>
             </div>
             </section>
-<section class="review">
+<section class="review" id="section-review">
   <h4 class="products-heading"> User's <span>Review</span> </h1>
   <div class="review-container">
     <div class="review-box">
@@ -395,6 +402,50 @@
     </div>
   </div>
 </section>
+<footer class="footers">
+
+  <div class="box-container">
+
+      <div class="box-f">
+     <h7 class="h-f">our stores</h7>
+          <a href="#" class="item-f">india</a>
+          <a href="#" class="item-f">USA</a>
+          <a href="#" class="item-f">japan</a>
+          <a href="#" class="item-f">paris</a>
+      </div>
+
+      <div class="box-f">
+        <h7 class="h-f">quick links</h7>
+          <a  class="item-f" id="home">home</a>
+          <a  class="item-f" id="products">products</a>
+          <a  class="item-f" id="upcoming">upcoming</a>
+          <a  class="item-f" id="review">review</a>
+      </div>
+
+      <div class="box-f">
+        <h7 class="h-f">Extra links</h7>
+          <a href="#" class="item-f">my account</a>
+          <a href="#" class="item-f">my favorite</a>
+          <a href="#" class="item-f">my orders</a>
+          <a href="#" class="item-f">newsletter</a>
+      </div>
+
+      <div class="box-f">
+        <h7 class="h-f">follow us</h7>
+          <a href="#" class="item-f">facebook</a>
+          <a href="#" class="item-f">twitter</a>
+          <a href="#" class="item-f">instagram</a>
+          <a href="#" class="item-f">linkedin</a>
+      </div>
+
+  <p class="credit">created by ujjawal atheist</p>
+
+  </div>
+
+</footer>
+
+
     <script src="script.js"></script>
+ 
   </body>
 </html>
