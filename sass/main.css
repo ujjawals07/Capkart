@@ -80,6 +80,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 0 3rem;
+  position: relative;
 }
 
 .i {
@@ -695,7 +696,7 @@ body {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  margin: 10rem auto;
+  margin: 6rem auto;
   padding: 4rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -802,6 +803,7 @@ body {
   color: whitesmoke;
   font-family: sans-serif;
   text-align: center;
+  cursor: pointer;
 }
 
 .btn-home:hover {

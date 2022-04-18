@@ -27,6 +27,7 @@ body {
   justify-content: space-around;
   align-items: center;
   border-bottom: 2px solid goldenrod;
+
 }
 .title {
   font-size: 2rem;
@@ -58,6 +59,7 @@ body {
 .icons {
   display: flex;
   padding: 0 3rem;
+  position: relative;
 }
 .i {
   margin: 0.5rem 1rem;
@@ -137,6 +139,7 @@ body {
   //grid-template-columns: repeat(6,1fr);
   //position: relative;
   z-index: 1000;
+
 }
 
 .slide {
@@ -566,6 +569,7 @@ background-repeat: no-repeat;
 background-size: cover;
 
 height: 100vh;
+
 //background: #000;
 
 }
@@ -573,7 +577,7 @@ height: 100vh;
   grid-column:2/4 ;
 background-color: rgb(255, 255, 255);
 width: max-content;
-margin:10rem auto;
+margin:6rem auto;
 padding: 4rem;
 display: flex;
 flex-direction: column;
@@ -656,6 +660,7 @@ padding-left: 3rem;
   color:whitesmoke;
   font-family: sans-serif;
   text-align: center;
+  cursor: pointer;
 &:hover{
   color: goldenrod;
 }
