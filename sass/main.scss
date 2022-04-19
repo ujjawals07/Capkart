@@ -13,7 +13,7 @@ html {
 
 body {
   line-height: 1.4;
-  //position: relative;
+
 }
 
 .container {
@@ -578,8 +578,8 @@ body {
   position: absolute;
   z-index: 1000000;
   display: block;
-  grid-row: 1/-1;
-  grid-column: 1/-1;
+ // grid-row: 1/-1;
+ // grid-column: 1/-1;
 }
 .cart-active {
   display: none;
@@ -678,7 +678,7 @@ body {
   font-size: 1rem;
   font-family: cursive;
   font-weight: 400;
-  margin-left: 5%;
+  margin-left: 25%;
   z-index: 100000;
 
   &:hover {
@@ -700,16 +700,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-width: 50%;
+    width: 40%;
     right: 0;
+    padding: 2rem;
     top: 10%;
-    position: absolute;
+    height: auto;
+position: absolute;
     z-index: 100000;
     display: block;
     grid-row: 1/-1;
     grid-column: 1/-1;
   }
-
   &-remove {
     background-color: rgb(176, 4, 4);
     font-family: sans-serif;
@@ -722,6 +723,10 @@ width: 50%;
       background-color: rgb(199, 7, 7);
     }
   }
+  &-img {
+    width: 5rem;
+    height: 7rem;
+  }
 
   //margin: 0 auto;
   &-title-heading {
@@ -730,29 +735,28 @@ width: 50%;
     font-family: cursive;
     text-align: center;
   }
-}
 
-&-container {
-  padding: 4rem 3rem;
+  &-container {
+    padding: 4rem 3rem;
 
-  display: flex;
-  flex-direction: column-reverse;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-&-box {
-  display: flex;
-  justify-content: space-around;
-  padding: 1rem 1rem;
-  align-items: center;
-  border: 1px solid black;
-  background-color: azure;
-}
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  &-box {
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 1rem;
+    align-items: center;
+    border: 1px solid black;
+    background-color: azure;
+  }
 
-&-active {
-  display: none;
+  &-active {
+    display: none;
+  }
 }
-
 @media (max-width: 970px) {
   .fav-body {
     width: 100%;

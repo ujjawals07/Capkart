@@ -697,8 +697,6 @@ body {
   position: absolute;
   z-index: 1000000;
   display: block;
-  grid-row: 1/-1;
-  grid-column: 1/-1;
 }
 
 .cart-active {
@@ -821,7 +819,7 @@ body {
   font-size: 1rem;
   font-family: cursive;
   font-weight: 400;
-  margin-left: 5%;
+  margin-left: 25%;
   z-index: 100000;
 }
 
@@ -843,13 +841,16 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: auto;
-  width: 50%;
+  width: 40%;
   right: 0;
+  padding: 2rem;
   top: 10%;
+  height: auto;
   position: absolute;
   z-index: 100000;
   display: block;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
 }
 
 .fav-remove {
@@ -866,24 +867,16 @@ body {
   background-color: #c70707;
 }
 
-.fav-title-heading {
-  color: #efe40c;
-  font-size: 2rem;
-  font-family: cursive;
-  padding-right: 2rem;
-  text-align: center;
-}
-
-.fav-title-heading-heading {
-  color: black;
-  font-size: 2rem;
-  font-family: cursive;
-  text-align: center;
-}
-
 .fav-img {
-  height: 8rem;
   width: 5rem;
+  height: 7rem;
+}
+
+.fav-title-heading {
+  color: #e8cb0b;
+  font-size: 2rem;
+  font-family: cursive;
+  text-align: center;
 }
 
 .fav-container {
