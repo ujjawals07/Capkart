@@ -58,6 +58,12 @@ review.forEach(function (r) {
   });
 });
 
+const carticon = document.querySelector("#cart-icon");
+carticon.addEventListener("click", function () {
+  console.log("click");
+  document.querySelector(".cart-body").classList.toggle("cart-active");
+});
+
 /* <section class="products2" id="products2">
 
 <h4 class="products-heading"> Upcoming <span>Caps</span> </h1>

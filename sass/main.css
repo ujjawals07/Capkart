@@ -80,7 +80,6 @@ body {
   display: -ms-flexbox;
   display: flex;
   padding: 0 3rem;
-  position: relative;
 }
 
 .i {
@@ -459,8 +458,8 @@ body {
 }
 
 .cap-img:hover {
-  -webkit-transform: scale(1.48);
-          transform: scale(1.48);
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -485,10 +484,6 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30rem;
           flex: 1 1 30rem;
-}
-
-.content {
-  padding: 1.2rem;
 }
 
 .icon {
@@ -530,19 +525,15 @@ body {
   color: #e1f106;
 }
 
-.content {
-  font-size: 1.5rem;
-}
-
 .price {
   font-size: 2.5rem;
   font-weight: bolder;
   padding: 1rem 0;
 }
 
-.price span {
+.product {
   font-size: 1.5rem;
-  text-decoration: line-through;
+  font-family: sans-serif;
 }
 
 .stars {
@@ -556,6 +547,7 @@ body {
   font-size: 1rem;
   padding: 1rem 2rem;
   color: black;
+  cursor: pointer;
 }
 
 .btn-cart:hover {
@@ -573,6 +565,18 @@ body {
   height: 12rem;
   -webkit-transform: rotate(-15deg);
           transform: rotate(-15deg);
+}
+
+.img2:hover {
+  -webkit-transform: rotate(3deg);
+          transform: rotate(3deg);
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+
+.box2 {
+  background-color: aliceblue;
+  border: none;
 }
 
 .review {
@@ -685,26 +689,21 @@ body {
   background-image: url(../img/pexels-karolina-grabowska-5632398.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  background-position: top;
+  height: auto;
+  width: 50%;
+  right: 0;
+  top: 10%;
+  background-color: rgba(5, 5, 5, 0.863);
+  position: absolute;
+  z-index: 1000000;
+  display: block;
+  grid-row: 1/-1;
+  grid-column: 1/-1;
 }
 
-.cart_container {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-column: 2/4;
-  background-color: white;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
-  margin: 6rem auto;
-  padding: 4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.cart-active {
+  display: none;
 }
 
 .cart-details {
@@ -715,8 +714,15 @@ body {
   color: #000;
   font-size: 2rem;
   font-family: cursive;
+  padding-right: 2rem;
   text-align: center;
-  margin: 0 auto;
+}
+
+.cart-title-heading {
+  color: black;
+  font-size: 2rem;
+  font-family: cursive;
+  text-align: center;
 }
 
 .cart-pic {
@@ -735,6 +741,7 @@ body {
           flex-direction: column-reverse;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .cart-box {
@@ -761,12 +768,12 @@ body {
 
 .cart-price {
   font-size: 1rem;
-  padding-bottom: .4rem;
+  padding-bottom: 0.4rem;
 }
 
 .cart-quantity {
   width: 20%;
-  padding: .2rem .2rem;
+  padding: 0.2rem 0.2rem;
 }
 
 .total {
@@ -777,15 +784,23 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1rem 2rem;
   font-size: 1.3rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   font-family: sans-serif;
+  margin: 0 auto;
+  z-index: 1000000;
+}
+
+.total-title {
+  padding-right: 2rem;
 }
 
 .delet {
-  background-color: red;
+  background-color: #b00404;
   font-family: sans-serif;
-  padding: .3rem .7rem;
+  padding: 0.3rem 0.7rem;
   color: #f9f9f9;
   text-transform: capitalize;
   border-radius: 10px;
@@ -796,25 +811,6 @@ body {
   background-color: #c70707;
 }
 
-.btn-home {
-  font-size: 2rem;
-  letter-spacing: 1px;
-  padding-left: 3rem;
-  color: whitesmoke;
-  font-family: sans-serif;
-  text-align: center;
-  cursor: pointer;
-}
-
-.btn-home:hover {
-  color: goldenrod;
-}
-
-.undo {
-  font-size: 2rem;
-  color: #f9f9f9;
-}
-
 .btn-buy {
   text-decoration: none;
   border: none;
@@ -822,10 +818,12 @@ body {
       align-self: flex-end;
   color: azure;
   background-color: goldenrod;
-  padding: 0.4rem 2rem;
+  padding: 0.2rem 2rem;
   font-size: 1rem;
   font-family: cursive;
   font-weight: 400;
+  margin-left: 5%;
+  z-index: 100000;
 }
 
 .btn-buy:hover {
@@ -833,6 +831,12 @@ body {
   cursor: pointer;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+}
+
+@media (max-width: 970px) {
+  .cart-body {
+    width: 100%;
+  }
 }
 
 /*.slide{
@@ -857,7 +861,18 @@ animation: slidecontent .3s linear .6s backwards;
  // justify-self: center;
 }
 
+.cart_container{
+ // grid-column:2/4 ;
+background-color: rgb(255, 255, 255);
+width: 1vw;
+margin:6rem auto;
+padding: 4rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+margin-top: 20%;
 
+}
 @keyframes   slidecontent{
   0%{
     opacity: 0;
