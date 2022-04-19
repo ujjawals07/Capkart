@@ -62,7 +62,14 @@ const carticon = document.querySelector("#cart-icon");
 carticon.addEventListener("click", function () {
   console.log("click");
   document.querySelector(".cart-body").classList.toggle("cart-active");
+  document.querySelector(".fav-body").classList.add("fav-active");
 });
+const favicon = document.querySelector("#fav-icon");
+favicon.addEventListener("click", function () {
+  document.querySelector(".fav-body").classList.toggle("fav-active");
+  document.querySelector(".cart-body").classList.add("cart-active");
+});
+
 
 /* <section class="products2" id="products2">
 

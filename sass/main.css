@@ -694,7 +694,6 @@ body {
   width: 50%;
   right: 0;
   top: 10%;
-  background-color: rgba(5, 5, 5, 0.863);
   position: absolute;
   z-index: 1000000;
   display: block;
@@ -835,6 +834,92 @@ body {
 
 @media (max-width: 970px) {
   .cart-body {
+    width: 100%;
+  }
+}
+
+.fav-body {
+  background-image: url(../img/pexels-karolina-grabowska-5624985.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: auto;
+  width: 50%;
+  right: 0;
+  top: 10%;
+  position: absolute;
+  z-index: 100000;
+  display: block;
+}
+
+.fav-remove {
+  background-color: #b00404;
+  font-family: sans-serif;
+  padding: 0.3rem 0.7rem;
+  color: #f9f9f9;
+  text-transform: capitalize;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.fav-remove:hover {
+  background-color: #c70707;
+}
+
+.fav-title-heading {
+  color: #efe40c;
+  font-size: 2rem;
+  font-family: cursive;
+  padding-right: 2rem;
+  text-align: center;
+}
+
+.fav-title-heading-heading {
+  color: black;
+  font-size: 2rem;
+  font-family: cursive;
+  text-align: center;
+}
+
+.fav-img {
+  height: 8rem;
+  width: 5rem;
+}
+
+.fav-container {
+  padding: 4rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.fav-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 1rem 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  background-color: azure;
+}
+
+.fav-active {
+  display: none;
+}
+
+@media (max-width: 970px) {
+  .fav-body {
     width: 100%;
   }
 }

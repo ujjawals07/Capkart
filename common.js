@@ -5,6 +5,7 @@ if (document.readyState == "loading") {
   ready();
 }
 let removebtn = document.getElementsByClassName("delet");
+
 function ready() {
   for (let i = 0; i < removebtn.length; i++) {
     let rm = removebtn[i];
@@ -63,7 +64,7 @@ function addtoproduct(title, price, productimg) {
       return;
     }
   }
-  console.log(productname);
+
   let cartinnerhtml = `
     <img src="${productimg}" alt="" class="cart-pic" />
     <div class="cart-details">
