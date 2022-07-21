@@ -111,3 +111,77 @@ function updatecartprice() {
     "$" + total);
   console.log(a);
 }
+
+
+/*<nav class="nav_list active" id="navlistactive">
+        <li class="nav-items">Home</li>
+        <li class="nav-items" id="products">Products</li>
+        <li class="nav-items" id="upcoming">Upcoming</li>
+        <li class="nav-items" id="review">Review</li>
+      </nav>
+      
+      
+      
+      .nav {
+  &_list {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+  }
+  &-items {
+    margin: 0 2.5rem;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover {
+      color: goldenrod;
+    }
+  }
+}
+
+
+@media (max-width: 800px) {
+  html {
+    font-size: 65%;
+  }
+  #menu {
+    display: block;
+  }
+
+  header .nav_list {
+    position: absolute;
+    top: 10%;
+    left: -120%;
+    width: 100%;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    z-index: 6000;
+    //display: none;
+  }
+  header .nav_list.active {
+    left: 0;
+  }
+  header .nav-items {
+    padding: 1.3rem;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    // display: inline-block;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(0, 0, 0, 0.269);
+    z-index: 6000;
+    &:hover {
+      color: goldenrod;
+    }
+  }
+}
+*/
